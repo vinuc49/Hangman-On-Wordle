@@ -31,11 +31,11 @@ def welcome():
         print("\nHello Guest, Best of luck!\n")
     time.sleep(1)
     print("GET EXCITED!\nLet's play Hangman!")
-  
+
 
 def main():
     display_title()  # print title function
     welcome()  # display user input name and greetings
-    
+
 
 main()
