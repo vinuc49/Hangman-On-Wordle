@@ -5,7 +5,7 @@ import random
 import time
 
 
-def display_greeting():
+def display_title():
     """
     Prompt user to input name and greetings
     """
@@ -18,6 +18,24 @@ def display_greeting():
     print("| || | /_\ | \| |/ __|  \/  | /_\ | \| |  / __| /_\ |  \/  | __|")
     print("| __ |/ _ \| .` | (_ | |\/| |/ _ \| .` | | (_ |/ _ \| |\/| | _| ")
     print("|_||_/_/ \_\_|\_|\___|_|  |_/_/ \_\_|\_|  \___/_/ \_\_|  |_|___|\n")
+
+
+def welcome():
+    """
+    Ask user to input name and print greetings
+    """
+    name = input("Enter your name: ")
+    if name:
+        print(f"\nHello {name.upper()}\n")
+    else:
+        print("\nHello Guest, Best of luck!\n")
+    time.sleep(2)
+    print("GET EXCITED!\nLet's play Hangman!")
   
 
-display_greeting()
+def main():
+    display_title()  # print title function
+    welcome()  # display user input name and greetings
+    
+
+main()
