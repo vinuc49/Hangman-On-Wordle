@@ -29,7 +29,7 @@ def welcome():
         print(f"\nHello {name.upper()}\n")
     else:
         print("\nHello Guest, Best of luck!\n")
-    time.sleep(2)
+    time.sleep(1)
     print("GET EXCITED!\nLet's play Hangman!")
   
 
