@@ -4,7 +4,7 @@ All Imports
 import random
 import time
 
-# List for guessing word
+# List of categories for guessing word
 weather = ["climate", "isobar", "visibility",
            "showery", "unsettled", "rainbow"]
 irish_names = ["caoimhe", "saoirse", "clodagh",
