@@ -4,6 +4,31 @@ All Imports
 import random
 import time
 
+# List for guessing word
+weather = ["climate", "isobar", "visibility",
+           "showery", "unsettled", "rainbow"]
+irish_names = ["caoimhe", "saoirse", "clodagh",
+               "roisin", "eireann", "padraig", "tadhg"]
+counties_of_ireland = ["limerick", "tipperary", "wexford",
+                       "donegal", "longford", "galway", "dublin"]
+drinks = ["tequila", "vermouth", "cognac",
+          "whiskey", "water", "baileys"]
+
+category = [weather, irish_names, counties_of_ireland, drinks]
+
+# stages for wrong answer  https://enhancer298.net/2020/07/10/hangman1
+stages = ['___________________',
+          '|         |        ',
+          '|         |        ',
+          '|         |        ',
+          '|         0        ',
+          '|        /|＼      ',
+          '|        / ＼      ',
+          '|      THE END     ']
+
+# Setting the stage number to be used as a limit for incorrect attempts
+stage_num = len(stages)
+
 
 def display_title():
     """
