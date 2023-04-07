@@ -126,8 +126,8 @@ def select_question():
         category_item = random.choice(category)
     else:
         category_item = category[list_num]
-        word = random.choice(category_item)
-        return (word)
+    word = random.choice(category_item)
+    return (word)
 
 
 def hangman():
