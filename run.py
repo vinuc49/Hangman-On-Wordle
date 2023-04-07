@@ -196,6 +196,13 @@ def hangman():
     replay()
 
 
+
+def display_guess_message():
+    print("\n")
+    print("Can you guess the word?")
+    print("Enter one letter to see if you are right?")
+
+    
 def main():
     display_title()  # print title function
     welcome()  # display user input name and greetings
