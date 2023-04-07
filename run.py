@@ -118,7 +118,7 @@ def select_question():
     """
     Random word selection from the list and display _ for each letter
     """
-    time.sleep(2)
+    time.sleep(1)
     category_chosen = category_select()
     list_num = category_chosen - 1
     print(f"Category {category_chosen}  was chosen")
@@ -216,7 +216,7 @@ def game_over():
     print("  / __|__ _ _ __  ___   / _ \__ _____ _ _ ")
     print(" | (_ / _` | '  \/ -_) | (_) \ V / -_) '_|")
     print("  \___\__,_|_|_|_\___|  \___/ \_/\___|_|  \n")
-    
+
 
 def replay():
     print("Would you like to play again?")
