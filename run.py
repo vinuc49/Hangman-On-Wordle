@@ -159,7 +159,7 @@ def hangman():
         guessed = input("Enter one letter! \n").lower()
         if guessed in answers:   # Checking the answer and determine the action
             if guessed in correct_guess:
-                display_alredy_used()
+                display_already_used()
                 time.sleep(2)
             else:
                 print(f"{guessed.upper()} is the right letter!")
@@ -202,9 +202,21 @@ def display_guess_message():
     print("Enter one letter to see if you are right?")
 
 
-def display_alredy_used():
+def display_already_used():
     print("You have already used this letter before,"
           " it's already displayed!")
+
+
+def game_over():
+    """
+    GAME OVER ASCII art
+    """
+    # ASCII ART https://patorjk.com/software/taag
+    print("   ___")
+    print("  / _ \__ _ _ __ ___   ___    _____   _____ _ __")
+    print(" / /_\/ _` | '_ ` _ \ / _ \  / _ \ \ / / _ \ '__|")
+    print("/ /_\\ (_| | | | | | |  __/ | (_) \ V /  __/ |")
+    print("\____/\__,_|_| |_| |_|\___|  \___/ \_/ \___|_| \_\n")
 
 
 def main():
