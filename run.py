@@ -212,12 +212,11 @@ def game_over():
     GAME OVER ASCII art
     """
     # ASCII ART https://patorjk.com/software/taag
-    print("   ___")
-    print("  / _ \__ _ _ __ ___   ___    _____   _____ _ __")
-    print(" / /_\/ _` | '_ ` _ \ / _ \  / _ \ \ / / _ \ '__|")
-    print("/ /_\\ (_| | | | | | |  __/ | (_) \ V /  __/ |")
-    print("\____/\__,_|_| |_| |_|\___|  \___/ \_/ \___|_| \_\n")
-
+    print("   ___                   ___              ")
+    print("  / __|__ _ _ __  ___   / _ \__ _____ _ _ ")
+    print(" | (_ / _` | '  \/ -_) | (_) \ V / -_) '_|")
+    print("  \___\__,_|_|_|_\___|  \___/ \_/\___|_|  \n")
+    
 
 def replay():
     print("Would you like to play again?")
@@ -227,7 +226,6 @@ def replay():
         "Please press y to play or press enter to exit the game\n")
     if play_again.lower() == "y":
         hangman()
-
     else:
         print("Hope you enjoyed the game!")
 
