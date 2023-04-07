@@ -196,13 +196,17 @@ def hangman():
     replay()
 
 
-
 def display_guess_message():
     print("\n")
     print("Can you guess the word?")
     print("Enter one letter to see if you are right?")
 
-    
+
+def display_alredy_used():
+    print("You have already used this letter before,"
+          " it's already displayed!")
+
+
 def main():
     display_title()  # print title function
     welcome()  # display user input name and greetings
