@@ -160,7 +160,7 @@ def hangman():
         if guessed in answers:   # Checking the answer and determine the action
             if guessed in correct_guess:
                 display_already_used()
-                time.sleep(2)
+                time.sleep(1)
             else:
                 print(f"{guessed.upper()} is the right letter!")
                 correct_guess.add(guessed)   # Add correct letter to the list
@@ -175,7 +175,7 @@ def hangman():
                     print(" |_||_|\_,_|_| |_| \__,_|\_, | ")
                     print("                         |__/  \n")
                     break
-                time.sleep(2)
+                time.sleep(1)
         else:
             if len(guessed) > 1:
                 print("Enter only one letter at a time")
@@ -187,12 +187,12 @@ def hangman():
             print("\n")
             wrong_guess.append(guessed.upper())
             print(f"Your incorrect guesses: {wrong_guess} ")
-            time.sleep(2)
+            time.sleep(1)
     if incorrect == stage_num:
         print(f"The answer is {word.upper()}")
         game_over()
 
-    time.sleep(3)
+    time.sleep(1)
     replay()
 
 
