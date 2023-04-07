@@ -127,7 +127,7 @@ def select_question():
     else:
         category_item = category[list_num]
         word = random.choice(category_item)
-        return(word)
+        return (word)
 
 
 def main():
