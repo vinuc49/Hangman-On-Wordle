@@ -130,6 +130,73 @@ def select_question():
         return (word)
 
 
+def hangman():
+    """
+    Main game function to display questions, check the answer
+    and count attempts.
+    Repeats process if game completion condition is not met.
+    Either word completion or reaching full stages will end the game.
+    """
+    incorrect = 0   # Setting the starting point of incorrect attempts
+    correct_guess = set([])   # Creating a empty list to store correct answers
+    word = select_question()   # Random word chosen by the function
+    check_answer = word.replace(" ", "")   # Removing space from answer
+    answers = [i for i in check_answer]   # Create list from the word
+    wrong_guess = []   # Incorrect letters goes in here
+    while incorrect < stage_num:
+        display_guess_message()
+        """
+        Print out _ for the remaining letters to guess
+        """
+        for i in word:
+            if i == " ":
+                print(i, end="  ")
+            elif i in correct_guess:
+                print(i.upper(), end=" ")
+            else:
+                print("_ ", end=" ")
+        print('\n')
+        guessed = input("Enter one letter! \n").lower()
+        if guessed in answers:   # Checking the answer and determine the action
+            if guessed in correct_guess:
+                display_alredy_used()
+                time.sleep(2)
+            else:
+                print(f"{guessed.upper()} is the right letter!")
+                correct_guess.add(guessed)   # Add correct letter to the list
+                word_letters = word.replace(" ", "")
+                if correct_guess == set(word_letters):
+                    print(f"CONGRATULATIONS!"
+                          f"You have guessed the word {word.upper()}.")
+                    # ASCII ART https://patorjk.com/software/taag
+                    print("██╗  ██╗██╗   ██╗██████╗ ██████╗  █████╗ ██╗   ██╗")
+                    print("██║  ██║██║   ██║██╔══██╗██╔══██╗██╔══██╗╚██╗ ██╔╝")
+                    print("███████║██║   ██║██████╔╝██████╔╝███████║ ╚████╔╝")
+                    print("██╔══██║██║   ██║██╔══██╗██╔══██╗██╔══██║  ╚██╔╝")
+                    print("██║  ██║╚██████╔╝██║  ██║██║  ██║██║  ██║   ██║")
+                    print("╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝\n")
+                    break
+                time.sleep(2)
+        else:
+            if len(guessed) > 1:
+                print("Enter only one letter at a time")
+            else:
+                print(f"' {guessed.upper()}' is the incorrect answer!")
+
+            incorrect += 1   # Increment incorrect attempt
+            print("\n".join(stages[:incorrect]))   # Display hangman image
+            print("\n")
+            wrong_guess.append(guessed.upper())
+            print(f"Your incorrect guesses: {wrong_guess} ")
+            time.sleep(2)
+    if incorrect == stage_num:
+        print(f"The answer is {word.upper()}")
+        game_over()
+
+    time.sleep(3)
+    replay()
+
+
 def main():
     display_title()  # print title function
     welcome()  # display user input name and greetings
