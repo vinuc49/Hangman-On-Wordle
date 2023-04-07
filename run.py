@@ -219,10 +219,24 @@ def game_over():
     print("\____/\__,_|_| |_| |_|\___|  \___/ \_/ \___|_| \_\n")
 
 
+def replay():
+    print("Would you like to play again?")
+    print("Enter y or press RUN PROGRAM button above to play again.\n"
+          "or press enter to exit the game.")
+    play_again = input(
+        "Please press y to play or press enter to exit the game\n")
+    if play_again.lower() == "y":
+        hangman()
+
+    else:
+        print("Hope you enjoyed the game!")
+
+
 def main():
     display_title()  # print title function
     welcome()  # display user input name and greetings
     display_rules()  # display rules if user chooses
+    hangman()  # main game function
 
 
 main()
