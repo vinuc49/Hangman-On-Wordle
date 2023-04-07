@@ -95,6 +95,25 @@ def rules_txt():
           "   and the hangman image completed the game ends.\n")
 
 
+def category_select():
+    """
+    Prompt user to select a category for the game and validate the input
+    """
+    print("PLEASE CHOOSE ONE OF THE CATEGORY:\n")
+    print("1. Weather, 2. Irish names, 3. Counties of Ireland", "4. Drinks\n",
+          "5. All the category mixed\n")
+    category_num = 0
+    while not 1 <= category_num <= 5:
+        try:
+            category_num = int(input("Please enter 1, 2, 3, 4 or 5  >>>  \n"))
+            if 1 <= category_num <= 5:
+                return category_num
+            else:
+                pass
+        except ValueError:
+            print("Only number 1, 2, 3, 4 or 5 accepted")
+
+
 def main():
     display_title()  # print title function
     welcome()  # display user input name and greetings
