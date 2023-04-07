@@ -5,16 +5,16 @@ import random
 import time
 
 # List of categories for guessing word
-weather = ["climate", "isobar", "visibility",
-           "showery", "unsettled", "rainbow"]
-irish_names = ["caoimhe", "saoirse", "clodagh",
-               "roisin", "eireann", "padraig", "tadhg"]
-counties_of_ireland = ["limerick", "tipperary", "wexford",
-                       "donegal", "longford", "galway", "dublin"]
+countries = ["switzerland", "germany", "canada",
+             "sweden", "japan", "australia"]
+sports = ["soccer", "badminton", "hockey", "volleyball",
+          "basketball", "tennis", "golf"]
+animals = ["elephant", "lion", "leopard",
+           "buffalo", "rhino", "monkey", "tiger"]
 drinks = ["tequila", "vermouth", "cognac",
           "whiskey", "water", "baileys"]
 
-category = [weather, irish_names, counties_of_ireland, drinks]
+category = [countries, sports, animals, drinks]
 
 # stages for wrong answer  https://enhancer298.net/2020/07/10/hangman1
 stages = ['___________________',
@@ -63,7 +63,7 @@ def display_rules():
     Ask user if game rules are needed and display game rules as requested
     """
     print("\nBefore we start, would you like to see the "
-           "instructions or are you good to go?")
+          "instructions or are you good to go?")
     rules_on = input("Press y if yes, "
                      "or press enter to play the game:\n")
     if rules_on.lower() == "y":
@@ -100,7 +100,7 @@ def category_select():
     Prompt user to select a category for the game and validate the input
     """
     print("PLEASE CHOOSE ONE OF THE CATEGORY:\n")
-    print("1. Weather, 2. Irish names, 3. Counties of Ireland", "4. Drinks\n",
+    print("1. Countries, 2. Sports, 3. Animals", "4. Drinks\n",
           "5. All the category mixed\n")
     category_num = 0
     while not 1 <= category_num <= 5:
