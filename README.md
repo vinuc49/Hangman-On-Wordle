@@ -8,18 +8,18 @@ This is done by using python to generate the word and check if the user's guesse
 
 # How to play
 
-- If you know how to play the game you can start the game, otherwise you can read about how to play the game.
+* If you know how to play the game you can start the game, otherwise you can read about how to play the game.
 
-- You will have to choose on which category to select
+* You will have to choose on which category to select
 
-- You will be presented with a number of blank spaces representing the missing letters you need to find.
+* You will be presented with a number of blank spaces representing the missing letters you need to find.
 
-- Use the keyboard to guess a letter (I recommend starting with vowels).
+* Use the keyboard to guess a letter (I recommend starting with vowels).
 
-- If your chosen letter exists in the answer, then all places in the answer where that letter appears will be revealed.
+* If your chosen letter exists in the answer, then all places in the answer where that letter appears will be revealed.
 
-- After you've revealed several letters, you may be able to guess what the answer is and fill in the remaining letters.
+* After you've revealed several letters, you may be able to guess what the answer is and fill in the remaining letters.
 
-- Every time you guess a letter wrong you lose a life and the hangman begins to appear, piece by piece.
+* Every time you guess a letter wrong you lose a life and the hangman begins to appear, piece by piece.
 
 - To win you need to solve the puzzle before the hangman dies.
