@@ -227,7 +227,8 @@ def replay():
     if play_again.lower() == "y":
         hangman()
     else:
-        print("Hope you enjoyed the game!")
+        print("Hope you enjoyed the game!\n"
+        "Good Bye :-)" )
 
 
 def main():
