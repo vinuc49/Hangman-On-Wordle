@@ -218,28 +218,6 @@ Once the program runs: you should see the message "the app was successfully depl
 
  20. As manual deployment was chosen, I had to come back to the Heroku deployment page whenever I have an updated working version pushed into the GitHub page.
 
-# Forking the GitHub repository
-
-By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:
-
-1. Log into [GitHub](https://github.com/) or [create an account](https://github.com/).
-
-2. Locate the GitHub repository. Link can be found [here](https://github.com/vinuc49/Hangman-On-Wordle).
-
-3. At the top of the repository, on the right side of the page, select "Fork".
-
-4. You should now have a copy of the original repository in your GitHub account.
-
-# Making a local clone
-
-1. Locate the GitHub repository. Link can be found [here](https://github.com/vinuc49/Hangman-On-Wordle).
-
-2. Next to the green Gitpod button you will see a button "code" with an arrow pointing down
-
-3. You are given the option to open with GitHub desktop or download zip
-
-4. You can also copy the https full link, go to git bash and write git clone and paste the full link
-
 # Credits
 
 * Code Institute for the deployment terminal
