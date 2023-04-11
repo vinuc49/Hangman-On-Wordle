@@ -4,7 +4,9 @@ Hangman is a game usually played by two or more people, where one person thinks 
 For this project I wanted to create a version of this game that you can play against the computer rather than playing against another person.
 This is done by using python to generate the word and check if the user's guesses are correct, incorrect, invalid or if the user has already guessed the letter.
 
-[Here is the live version of my project](https://hangman-on-wordle.herokuapp.com/) 
+[Here is the live version of my project](https://hangman-on-wordle.herokuapp.com/)
+
+![my-page](assets/images/my-app-image.png)
 
 # How to play
 
@@ -22,4 +24,4 @@ This is done by using python to generate the word and check if the user's guesse
 
 * Every time you guess a letter wrong you lose a life and the hangman begins to appear, piece by piece.
 
-- To win you need to solve the puzzle before the hangman dies.
+* To win you need to solve the puzzle before the hangman dies.
