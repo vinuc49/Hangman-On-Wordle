@@ -123,3 +123,129 @@ This is the flowchart made during the planning stage of the project. This flowch
 * [time](https://docs.python.org/3/library/time.html) to slow down printed statements
 
 * [Python 3](https://www.python.org/) - an interpreted high-level general-purpose backend programming language.
+
+# Testing
+
+
+I have manually tested this project by doing the following: 
+* Passed the code through a PEP8 linter and confirmed, there are no problems (find under validator testing)
+* Give invalid inputs strings when numbers are expected, out of bound inputs, some inputs twice
+
+Tested only numbers are permitted
+
+![only numbers](assets/images/only-numbers.png)
+
+## Validator Testings
+
+* [PEP8](http://pep8online.com/checkresult)
+    * No errors were returned from PEP8online.com
+
+## Bugs
+
+### Solved Bugs
+
+
+* Heroku, the deployment terminal was set to 80 columns and 24 rows.
+
+At first, I was just writing lines and after error showing fixed-line length.
+
+* ASCII art gave lots of white space, which needed to be fixed by deleting them. 
+
+I selected for every image different font. Block element font was easy to fix.
+
+Image "Game over" is created using line art and it was impossible to solve 
+* errors
+   * flake8(W605)
+   * pylint(anomalous-backslash-in-string)
+
+## Remaining Bugs
+
+* No bugs remaining
+
+
+# Deployment
+
+
+This project was deployed using Code Institute's mock terminal for Heroku. Please follow the below steps.
+
+## Deployment steps
+
+1. Git add and git commit the changes made
+
+2. Log into [Heroku](https://id.heroku.com/login) or create a new account and log in
+
+3. top right-hand corner click "New" and choose the option Create new app, if you are a new user, the "Create new app" button will appear in the middle of the screen
+
+4. Write app name - it has to be unique, it cannot be the same as this app
+
+5. Choose Region - I am in Europe
+
+6. Click "Create App" The page of your project opens.
+
+7.  Choose "settings" from the menu on the top of the page
+
+8. Go to section "Config Vars" and click the button "Reveal Config Vars"
+
+9. In the field for "KEY" enter "PORT"-  capital letters and value"8000" 
+
+10. Go to section "Build packs" and click "Add build pack"
+
+   * in this new window - click Python and "Save changes" [`Heroku/Python`]
+   * click "Add build pack" again
+   * in this new window - click Node.js and "Save changes" [`Heroku/NodeJS`]
+   * take care to have those apps in this order: [`Python`] first, [`Node.js`] second, drag and drop if needed
+
+11. Next go to "Deploy" in the menu bar on the top
+
+12. Go to section "deployment method", choose "GitHub"
+
+13. New section will appear "Connect to GitHub" - Search for the repository to connect to
+
+14. type the name of your repository and click "search"
+
+15. once Heroku finds your repository - click "connect"
+
+16. Scroll down to the section "Automatic Deploys"
+
+17. Click "Enable automatic deploys" or choose "Deploy branch" and manually deploy
+   * As I wanted to have control over when to deploy the version, I have chosen manual deployment by pressing the Deploy branch button instead of Enable Automatic Deploys 
+
+18. Click "Deploy branch"
+
+Once the program runs: you should see the message "the app was successfully deployed"
+
+ 19. Click the button "View". This View button will open the terminal game in the new window. Here is the deployed page [hangman-on-wordle](https://hangman-on-wordle.herokuapp.com/)
+
+ 20. As manual deployment was chosen, I had to come back to the Heroku deployment page whenever I have an updated working version pushed into the GitHub page.
+
+# Forking the GitHub repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:
+
+1. Log into [GitHub](https://github.com/) or [create an account](https://github.com/).
+
+2. Locate the GitHub repository. Link can be found [here](https://github.com/vinuc49/Hangman-On-Wordle).
+
+3. At the top of the repository, on the right side of the page, select "Fork".
+
+4. You should now have a copy of the original repository in your GitHub account.
+
+# Making a local clone
+
+1. Locate the GitHub repository. Link can be found [here](https://github.com/vinuc49/Hangman-On-Wordle).
+
+2. Next to the green Gitpod button you will see a button "code" with an arrow pointing down
+
+3. You are given the option to open with GitHub desktop or download zip
+
+4. You can also copy the https full link, go to git bash and write git clone and paste the full link
+
+# Credits
+
+* Code Institute for the deployment terminal
+
+* To create the game I got help [from](http://inventwithpython.com/invent4thed/chapter8.html)
+
+* Idea for [flowchart](http://inventwithpython.com/invent4thed/chapter7.html)
+
+* My mentor Marcel for encouraging me throughout the project.
