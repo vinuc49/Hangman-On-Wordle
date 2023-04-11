@@ -76,3 +76,50 @@ This is done by using python to generate the word and check if the user's guesse
    * user input what choice he made
       * def game_over()
       * def replay()
+
+### Future Features
+
+
+* The Hangman game is an old, old game, and seeing the game's title as a children's game can be odd. Taking into consideration mental health and suicide issues. So for that reason, I would like to give different visualisation options where you can select build a snowman or melting snowman.
+
+* more categories to select
+
+* bigger list of words. Special file to accommodate that.
+
+* for a language learning purpose it would be good to hear the words sound.
+
+* the letters can be displayed for selection
+
+* different difficulty levels 
+
+
+# Data Model
+
+This is the flowchart made during the planning stage of the project. This flowchart has been used to visualise the functions and behavior control during the building stage of the project.
+
+* Flowchart
+![Flowchart](assets/images/hangman-flowchart.png)
+
+
+# Technology
+
+
+*  This game was created with:
+
+    * [Gitpod](https://www.gitpod.io/) used to develop a project and organise version control 
+
+    * [Github](https://github.com) used to host repository
+       
+    * [Heroku](https://id.heroku.com/login) used to deploy my application
+
+* [Lucid](https://lucid.app/users/login#/login) used to create the flowchart for the project.
+
+* [Grammarly](https://app.grammarly.com/) used to fix the thousands of grammar errors across the project.
+
+* The Code Institute's GitHub [python-essentials-template](https://github.com/Code-Institute-Org/python-essentials-template) for Python is used in order for the program to display properly in the deployed site on Heroku.
+
+* [random](https://docs.python.org/3/library/random.html) to randomize anagram
+
+* [time](https://docs.python.org/3/library/time.html) to slow down printed statements
+
+* [Python 3](https://www.python.org/) - an interpreted high-level general-purpose backend programming language.
